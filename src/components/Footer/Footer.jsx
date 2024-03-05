@@ -1,12 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Footer.css";
 import FooterVector from "../../assets/FooterVector.svg";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import gsap from 'gsap';
+import gsap from "gsap";
 import ScrollToTopButton from "../ScrollToTop/ScrollToTopButton";
+import ContactModal from "../contact/contactModal";
 const Footer = () => {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
+  const openContactModal = () => {
+    setIsContactModalOpen(true);
+  };
+
+  const closeContactModal = () => {
+    setIsContactModalOpen(false);
+  };
   useEffect(() => {
     const blobContainer = document.getElementById("blob-container");
 
@@ -19,7 +28,7 @@ const Footer = () => {
     tl.to(blobContainer, {
       duration: 2,
       ease: "power1.inOut",
-      background: `radial-gradient(circle at ${xPercent}% ${yPercent}%, rgba(245,183,66,1) 9%, rgba(254,248,122,1) 91%)`
+      background: `radial-gradient(circle at ${xPercent}% ${yPercent}%, rgba(245,183,66,1) 9%, rgba(254,248,122,1) 91%)`,
     });
 
     // Function to update the gradient position on mouse move
@@ -41,7 +50,7 @@ const Footer = () => {
       gsap.to(blobContainer, {
         background: `radial-gradient(circle at ${x}% ${y}%, rgba(245,183,66,1) 9%, rgba(254,248,122,1) 91%)`,
         duration: 0.5,
-        ease: "none"
+        ease: "none",
       });
     }
 
@@ -62,24 +71,25 @@ const Footer = () => {
         tl.restart();
       }, 200000);
     });
-
-  }, [])
+  }, []);
 
   return (
     <div className="foot__Sec" id="blob-container">
       <div className="Footer-container">
         <div className="ft_fst-Sec">
-          <h2>
-            We Are Ossem
-          </h2>
+          <h2>We Are Ossem</h2>
           <div className="ft_arw-img">
             <img src={FooterVector} alt="Footervector" />
           </div>
-
         </div>
         <div className="Footer-second-section">
           <div className="ft_sc-Row1">
-            <button>Let's Connect <span><i className="fa-solid fa-arrow-right"></i></span></button>
+            <button onClick={openContactModal}>
+              Let's Connect
+              <span>
+                <i className="fa-solid fa-arrow-right"></i>
+              </span>
+            </button>
           </div>
           <div className="ft_sc-Row2">
             <p>
@@ -92,8 +102,8 @@ const Footer = () => {
           <div className="Footer-third-first-section">
             <h4>Ed tech solutions for all educational organizations .</h4>
             <h5>
-              We’ll listen to your needs, identify the best approach, and then create a bespoke
-              smart ERP solution that’s right for you.
+              We’ll listen to your needs, identify the best approach, and then
+              create a bespoke smart ERP solution that’s right for you.
             </h5>
           </div>
           <div className="Footer-social-networks">
@@ -104,25 +114,22 @@ const Footer = () => {
           </div>
         </div>
         <div className="ft_frth-sec">
-          <div className="copyright">
-            Copyright@ossem2024
-          </div>
+          <div className="copyright">Copyright@ossem2024</div>
           <div className="btm_lnks">
-            <a href="">
-              Privacy Policy
-            </a>
+            <a href="">Privacy Policy</a>
           </div>
           <div className="pwr_by">
-            Powered by :
-            <a href="">Lexodd Hypernova Pvt. Ltd</a>
+            Powered by :<a href="">Lexodd Hypernova Pvt. Ltd</a>
           </div>
         </div>
         <div className="sc__Top-sec">
           <ScrollToTopButton></ScrollToTopButton>
         </div>
       </div>
+      {isContactModalOpen && (
+        <ContactModal onClose={closeContactModal} isOpen={openContactModal} />
+      )}
     </div>
-
   );
 };
 
