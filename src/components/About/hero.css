@@ -1,0 +1,117 @@
+.abt__Hero-wrap {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 148px);
+    padding: 0 80px;
+    background-image: url(../../../public/assets/img/about-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.abt_Hero-sec {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.abt_Hero-txt {
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+}
+
+.abt_ttl-txt {
+    width: 100%;
+    height: 117px;
+    position: relative;
+    overflow: hidden;
+}
+
+.abt_ttl-txt span {
+    position: absolute;
+    font-family: Gotham;
+    font-size: 113px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    text-align: left;
+    text-transform: capitalize;
+    width: 100%;
+    display: inline-block;
+    transform: skewY(7);
+    transform: translateY(100%);
+}
+
+.abt__Hero-img {
+    width: 54%;
+}
+
+.abt__Hero-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1680px) {
+    .abt__Hero-wrap {
+        height: calc(100vh - 90px);
+        padding: 0 40px;
+    }
+
+    .abt_ttl-txt {
+        height: 75px;
+    }
+
+    .abt_ttl-txt span {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .abt_ttl-txt {
+        height: 60px;
+    }
+
+    .abt_ttl-txt span {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .abt_Hero-sec {
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .abt_Hero-txt {
+        width: 100%;
+    }
+
+    .abt__Hero-img {
+        width: 100%;
+    }
+
+    .abt__Hero-wrap {
+        padding: 0 20px;
+        background-size: 100% 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .abt_ttl-txt {
+        height: 45px;
+    }
+
+    .abt_ttl-txt span {
+        font-size: 40px;
+    }
+
+    .abt__Hero-wrap {
+        height: calc(100vh - 77px);
+    }
+}

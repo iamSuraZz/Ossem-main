@@ -1,0 +1,164 @@
+.aboutUs__Wrap {
+    padding: 0 80px;
+    margin-top: 18rem;
+}
+
+.abt_Us-ttl h2 {
+    font-family: Gotham;
+    font-size: 84px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.08em;
+    text-align: left;
+    display: inline-block;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #E1D9D9;
+    margin-bottom: 45px;
+}
+
+.abt_Us-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 11rem;
+}
+
+.abt_us-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.abt_us-cnt {
+    flex: 1;
+    padding: 14rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.abt_us-para h3 {
+    font-family: Gotham;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    display: inline-block;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E1D9D9;
+    margin-bottom: 60px;
+}
+
+.abt_us-para p {
+    font-family: Gotham;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.abt_us-cta {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* .abt_us-cta button {
+    font-family: 'Gotham';
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: transparent;
+    border: 2px solid #F0EAEA;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+} */
+
+@media only screen and (max-width: 1680px) {
+    .aboutUs__Wrap {
+        padding: 0 40px;
+        margin-top: 12rem;
+    }
+
+    .abt_Us-ttl h2 {
+        font-size: 55px;
+        padding-bottom: 15px;
+        margin-bottom: 35px;
+    }
+
+    .abt_us-para h3 {
+        font-size: 30px;
+        line-height: 30px;
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+    }
+
+    .abt_us-para p {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .abt_us-img {
+        width: 500px;
+    }
+
+    .abt_Us-box {
+        gap: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .abt_us-img {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .aboutUs__Wrap {
+        padding: 0 20px;
+        margin-top: 8rem;
+    }
+
+    .abt_Us-box {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .abt_us-img {
+        width: 100%;
+    }
+
+    .abt_us-cnt {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .aboutUs__Wrap {
+        margin-top: 6rem;
+    }
+
+    .abt_Us-ttl h2 {
+        font-size: 32px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .abt_us-para h3 {
+        font-size: 20px;
+        line-height: 22px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .abt_us-para p {
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .abt_us-cta {
+        margin-top: 20px;
+    }
+}

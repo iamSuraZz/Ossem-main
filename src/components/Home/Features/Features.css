@@ -1,0 +1,95 @@
+.Features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 80px;
+  margin-top: 10rem;
+}
+
+.feat__Ttl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 44px;
+}
+
+.feat__Ttl h2 {
+  font-family: Gotham;
+  font-size: 67px;
+  font-weight: 400;
+  line-height: 75px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.feat__Ttl p {
+  font-family: Gotham;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 53px;
+  letter-spacing: 0px;
+  text-align: center;
+  width: 60%;
+}
+
+
+.Features-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 11rem;
+  width: 100%;
+}
+
+.ft__Wh-kn {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-top: 40px;
+}
+
+@media only screen and (max-width: 1680px) {
+  .Features-container {
+    padding: 0 40px;
+    margin-top: 6rem;
+  }
+
+  .feat__Ttl h2 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .feat__Ttl {
+    gap: 30px;
+  }
+
+  .feat__Ttl p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 54%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .feat__Ttl p {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Features-container {
+    padding: 0 20px;
+  }
+
+  .feat__Ttl h2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .feat__Ttl p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,220 @@
+:root {
+  font-size: 10px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141517;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pg__Wrap {
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* -------Loader------- */
+
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f1f1ef;
+
+  display: block;
+  z-index: 1000;
+}
+
+.polygon {
+  position: absolute;
+  /* position: relative; */
+  background: #fff;
+  /* background-image: url(../public/assets/img/loader.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  width: 5em;
+  height: 5em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* clip-path: polygon(0 10%, 10% 90%, 100% 100%, 95% 5%); */
+  animation: square 3s cubic-bezier(0.175, .520, 0.100, 1) infinite;
+  transform-origin: center center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.loader__img {
+  width: 560px;
+  height: 680px;
+  position: absolute;
+  top: 50%;
+  /* bottom: 0%; */
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* transition: .5s; */
+  /* animation: loader 1s forwards */
+
+}
+
+.loader__img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@keyframes loader {
+  to {
+    /* bottom: 50%; */
+    transform: translate(-50%, -50%);
+  }
+
+  /* 20% {
+    clip-path: polygon(3% 8%, 6% 96%, 98% 92%, 100% 0%);
+  }
+
+  40% {
+    clip-path: polygon(6% 10%, 6% 94%, 90% 98%, 92% 8%);
+  }
+
+  60% {
+    clip-path: polygon(4% 5%, 1% 92%, 99% 90%, 92% 2%);
+  }
+
+  80% {
+    clip-path: polygon(10% 0, 8% 97%, 93% 95%, 100% 8%);
+  }
+
+  100% {
+    clip-path: polygon(0 10%, 10% 90%, 100% 100%, 95% 5%);
+  } */
+}
+
+
+.loaded {
+  animation: squareblow 1s cubic-bezier(0.175, .520, 0.100, 1) 1 forwards;
+
+}
+
+.kill {
+  display: none;
+}
+
+/* .loaded .loader__img{
+  display: none;
+} */
+
+@keyframes square {
+  0% {
+    clip-path: polygon(0 10%, 10% 90%, 100% 100%, 95% 5%);
+  }
+
+  20% {
+    clip-path: polygon(3% 8%, 6% 96%, 98% 92%, 100% 0%);
+  }
+
+  40% {
+    clip-path: polygon(6% 10%, 6% 94%, 90% 98%, 92% 8%);
+  }
+
+  60% {
+    clip-path: polygon(4% 5%, 1% 92%, 99% 90%, 92% 2%);
+  }
+
+  80% {
+    clip-path: polygon(10% 0, 8% 97%, 93% 95%, 100% 8%);
+  }
+
+  100% {
+    clip-path: polygon(0 10%, 10% 90%, 100% 100%, 95% 5%);
+  }
+}
+
+@keyframes squareblow {
+  0% {
+    width: 4em;
+    height: 4em;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    /* clip-path: polygon(1% 3%, 0.5% 98%, 99% 97%, 99.5% 3%); */
+  }
+}
+
+/* #################################### */
+
+.wrapper {
+  /* position: absolute;
+  background: #f1f1ef;
+  min-height: 100%;
+  width: 100%; */
+}
+
+.border {
+  /* position: absolute;
+  background: #fff;
+  min-height: 100%;
+  width: 100%;
+  padding: 5em;
+  clip-path: polygon(1% 3%, 0.5% 98%, 99% 97%, 99.5% 3%); */
+}
+
+.page_Content {
+  display: none;
+}
+
+.show {
+  display: block;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

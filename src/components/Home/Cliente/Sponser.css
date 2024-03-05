@@ -1,0 +1,66 @@
+.client-logos {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.client-logos h2 {
+  color: #000;
+  text-align: left;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-bottom: 2px solid #000;
+  width: fit-content;
+
+  margin: 20px;
+}
+
+.logo-container {
+  margin: 20px 20px 10px 20px;
+}
+
+.logo-container img {
+  max-width: 80%;
+  height: auto;
+}
+
+.parallax {
+  overflow: hidden;
+  letter-spacing: -2px;
+  line-height: 0.8;
+  /* margin: 0; */
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 12rem;
+}
+
+.parallax .scroller {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 64px;
+  display: flex;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.parallax span {
+  display: block;
+  margin-right: 18rem;
+}
+
+@media only screen and (max-width: 1680px) {
+  .parallax {
+    margin-bottom: 8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parallax {
+    margin-bottom: 4rem;
+  }
+}

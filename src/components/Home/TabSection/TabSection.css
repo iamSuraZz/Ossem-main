@@ -1,0 +1,102 @@
+.TabSection_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 20px 20px;
+}
+.img-tab {
+  height: 100vh;
+  padding: 20px 20px;
+  margin: 20px 20px;
+}
+.TabSection-second-half {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+.TabSection-second-half h5 {
+  margin: 30px 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 18.906px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px; /* 142.81% */
+}
+.tab-switcher h2 {
+  cursor: pointer;
+}
+.tab-switcher-item {
+  color: #acb3b7;
+  font-family: Inter;
+  font-size: 72.256px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 83.07px; /* 114.966% */
+  letter-spacing: -1.51px;
+  border-bottom: none;
+  transition: all 0.3s ease-in;
+  position: relative;
+}
+
+.tab-switcher-item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 4px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-in;
+}
+
+.tab-switcher-item.active {
+  border-bottom: 4px solid #000;
+  width: fit-content;
+  color: #000;
+}
+
+.tab-switcher-item.active:before {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  background-size: 100% 100%;
+  transition: background-size 0.3s ease-in;
+}
+.Heading-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 40vw;
+  margin: 0px 20px;
+}
+.Heading-div h4 {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px; /* 112.5% */
+  margin-bottom: 10px;
+}
+.Heading-div p {
+  color: #444a44;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

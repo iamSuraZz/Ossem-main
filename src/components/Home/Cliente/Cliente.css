@@ -1,0 +1,60 @@
+/* .Cliente-container {
+  margin: 20px 25px 55px 25px;
+} */
+
+.Cliente-container {
+  margin-top: 20rem;
+}
+
+.cl__Ttl {
+  padding: 0 80px;
+}
+
+.cl__Ttl h2 {
+  font-family: 'Gotham';
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+  text-align: left;
+  display: inline-block;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 8rem;
+}
+
+@media only screen and (max-width: 1680px) {
+  .Cliente-container {
+    margin-top: 14rem;
+  }
+
+  .cl__Ttl {
+    padding: 0 40px;
+  }
+
+  .cl__Ttl h2 {
+    font-size: 45px;
+    padding-bottom: 15px;
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .Cliente-container {
+    margin-top: 10rem;
+  }
+
+  .cl__Ttl {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Cliente-container {
+    margin-top: 6rem;
+  }
+
+  .cl__Ttl h2 {
+    font-size: 32px;
+  }
+}

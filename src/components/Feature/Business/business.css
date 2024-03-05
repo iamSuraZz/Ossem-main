@@ -1,0 +1,369 @@
+.bnss__Wrap {
+    /* height: 100vh;
+    width: 100vw; */
+    margin-top: 7rem;
+}
+
+.bnss__Ttl h2 {
+    font-family: 'Gotham';
+    font-size: 119px;
+    font-weight: 700;
+    line-height: 170px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #444A44;
+}
+
+.bn_Ttl1 {
+    font-family: 'Gotham';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: inline-block;
+    padding: 3px 8px;
+    background: linear-gradient(180deg, rgba(19, 97, 146, 0.73) 50%, #7491A3 100%);
+    color: #fff;
+    box-shadow: 0px 0px 27px 0px #136192;
+    border-radius: 3px;
+}
+
+.bn_Ttl2 {
+    padding: 12px 24px;
+    background: linear-gradient(180deg, rgba(19, 97, 146, 0.73) 50%, #7491A3 100%);
+    color: #fff;
+    box-shadow: 0px 0px 27px 0px #136192;
+    border-radius: 3px;
+    display: inline-block;
+    font-family: 'Gotham';
+    font-size: 119px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.cta {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    padding-right: 15px;
+    /* text-transform: uppercase; */
+    font-family: Gotham;
+    font-size: 41px;
+    font-weight: 400;
+    line-height: 71px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+    fill: #FFFFFF99;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: #FFFFFF99;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFF99;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.bnss__Card-wrap {
+    margin-top: 13rem;
+    padding: 60px 80px;
+    position: relative;
+    background: url(../../../../public/assets/img/bns-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bnss-card-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 17rem;
+}
+
+.bnss_card-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 38rem;
+}
+
+.bnss_img {
+    width: 585px;
+}
+
+.bnss_img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.bnss__crd-cnt {
+    margin-top: 18rem;
+}
+
+.bnss__crd-cnt h3 {
+    font-family: Gotham;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 92px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: inline-block;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #F79D1D;
+}
+
+.bnss__crd-cnt p {
+    font-family: Gotham;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 66px;
+}
+
+.bnss__Btn {
+    margin-top: 14rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bnss_card-row.bnss_card-row2 .bnss__Btn {
+    justify-content: flex-start;
+}
+
+@media only screen and (max-width: 1680px) {
+    .bnss__Ttl h2 {
+        font-size: 75px;
+        line-height: 110px;
+    }
+
+    .bn_Ttl1 {
+        font-size: 22px;
+        line-height: 32px;
+        padding: 3px 5px;
+    }
+
+    .bn_Ttl2 {
+        padding: 10px 18px;
+        font-size: 75px;
+    }
+
+    .bnss__Card-wrap {
+        margin-top: 9rem;
+        padding: 30px 40px;
+    }
+
+    .bnss_card-row {
+        gap: 28rem;
+    }
+
+    .bnss_img {
+        width: 460px;
+    }
+
+    .bnss__crd-cnt {
+        margin-top: 12rem;
+    }
+
+    .bnss__crd-cnt h3 {
+        font-size: 65px;
+        line-height: 65px;
+        padding-bottom: 20px;
+    }
+
+    .bnss__crd-cnt p {
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 46px;
+    }
+
+    .cta span {
+        font-size: 30px;
+    }
+
+    .bnss-card-sec {
+        gap: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .bnss_img {
+        width: 400px;
+    }
+
+    .bnss__crd-cnt {
+        margin-top: 10rem;
+    }
+
+    .bnss__crd-cnt h3 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .bnss__crd-cnt p {
+        font-size: 20px;
+        line-height: 26px;
+        margin-top: 40px;
+    }
+
+    .bnss__Btn {
+        margin-top: 8rem;
+    }
+
+    .cta span {
+        font-size: 26px;
+    }
+
+    .bnss_card-row {
+        gap: 18rem;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .bnss__Card-wrap {
+        margin-top: 6rem;
+        padding: 20px 20px;
+    }
+
+    .bn_Ttl2 {
+        padding: 8px 12px;
+        font-size: 55px;
+    }
+
+    .bn_Ttl1 {
+        font-size: 20px;
+        line-height: 28px;
+        padding: 3px 5px;
+    }
+
+    .bnss__Ttl h2 {
+        font-size: 55px;
+        line-height: 80px;
+    }
+
+    .bnss-card-sec {
+        gap: 4rem;
+    }
+
+    .bnss_card-row {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .bnss_img {
+        width: 100%;
+    }
+
+    .bnss__crd-cnt {
+        margin-top: 0rem;
+    }
+
+    .bnss__crd-cnt h3 {
+        font-size: 40px;
+        line-height: 40px;
+        padding-bottom: 15px;
+    }
+
+    .bnss__crd-cnt p {
+        font-size: 17px;
+        line-height: 24px;
+        margin-top: 30px;
+    }
+
+    .bnss__Btn {
+        margin-top: 3rem;
+    }
+
+    .bnss_card-row2 {
+        flex-direction: column-reverse;
+    }
+
+    .bnss__Btn {
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bnss__Ttl h2 {
+        font-size: 32px;
+        line-height: 50px;
+    }
+
+    .bn_Ttl1 {
+        font-size: 17px;
+        line-height: 25px;
+        padding: 3px 5px;
+    }
+
+    .bn_Ttl2 {
+        padding: 5px 8px;
+        font-size: 32px;
+    }
+
+    .bnss__Card-wrap {
+        margin-top: 4rem;
+        padding: 20px 20px;
+    }
+
+    .bnss__crd-cnt h3 {
+        font-size: 32px;
+        line-height: 32px;
+        padding-bottom: 10px;
+    }
+
+    .bnss__crd-cnt p {
+        font-size: 17px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+
+    .cta span {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .bnss__Btn {
+        margin-top: 3rem;
+    }
+
+    .bnss_card-row {
+        gap: 3rem;
+    }
+}

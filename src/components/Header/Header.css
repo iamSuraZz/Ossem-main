@@ -1,0 +1,179 @@
+.top__Nav {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.nav-container {
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-nav-section {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+}
+
+.first-logo-nav {
+  width: 131px;
+  height: 57px;
+}
+
+.first-logo-nav img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.nav-first-links ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 68px;
+}
+
+/* .first-logo-nav img {
+  padding: 0 50px;
+} */
+/* .nav-first-links {
+  margin-left: 50px;
+} */
+.top__Nav a {
+  color: #fff;
+  text-align: center;
+  font-family: Gotham;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+  position: relative;
+}
+
+.top__Nav a:hover {
+  color: #00B2C7;
+}
+
+.top__Nav a::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -8px;
+  left: 0;
+  background-color: #00B2C7;
+  transition: .3s ease-in-out;
+}
+
+.top__Nav a:hover::before {
+  width: 100%;
+}
+
+.top__Nav .active {
+  color: #00B2C7;
+}
+
+.top__Nav .active::before {
+  width: 100%;
+}
+
+.second-nav-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.button-Login {
+  font-family: 'Gotham';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 24px 60px;
+  color: #f7f7f7;
+  border: none;
+  background-color: #00b2c7;
+  border-radius: 37px;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1680px) {
+  .nav-container {
+    padding: 20px 40px;
+  }
+
+  .top__Nav a {
+    font-size: 15px;
+  }
+
+  .first-logo-nav {
+    width: 110px;
+    height: 50px;
+  }
+
+  .first-nav-section {
+    gap: 60px;
+  }
+
+  .nav-first-links ul {
+    gap: 50px;
+  }
+
+  .button-Login {
+    font-size: 15px;
+    padding: 16px 40px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .mob_Navbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .top__Nav {
+    display: none;
+  }
+
+  .mob_Navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mob-logo {
+    width: 120px;
+  }
+
+  .mob-logo img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .mob_ham {
+    width: 30px;
+  }
+
+  .mob_ham img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mob-logo {
+    width: 80px;
+  }
+
+  .mob_ham {
+    width: 20px;
+  }
+}

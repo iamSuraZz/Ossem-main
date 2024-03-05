@@ -1,0 +1,12 @@
+#paragraph {
+    font-family: 'Inter', sans-serif;
+    font-size: 3.5rem;
+    color: white;
+    position:sticky;
+    top: 25%;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+#paragraph span {
+    transition: opacity .3s linear;
+}
